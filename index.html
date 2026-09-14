@@ -1,1 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>SmartClass AI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <div class="logo-icon">SC</div>
+
+        <div>
+            <h2>SmartClass<span> AI</span></h2>
+            <small>Smart Classroom System</small>
+        </div>
+    </div>
+
+    <nav>
+        <a class="active" href="index.html">Dashboard</a>
+        <a href="rooms.html">Classrooms</a>
+        <a href="prediction.html">AI Prediction</a>
+        <a href="history.html">History</a>
+    </nav>
+
+    <div class="user">
+        <div class="avatar">S</div>
+        <span>Student</span>
+    </div>
+
+</header>
+
+
+<main class="container">
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="badge">
+                ● SYSTEM ONLINE
+            </span>
+
+            <h1>
+                Find your classroom.
+                <span>Smarter.</span>
+            </h1>
+
+            <p>
+                SmartClass AI helps students find available classrooms,
+                check in, check out and predict future classroom availability.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="rooms.html" class="btn primary">
+                    Find Classroom →
+                </a>
+
+                <a href="prediction.html" class="btn secondary">
+                    AI Prediction
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1000&q=80"
+                alt="University classroom"
+            >
+
+            <div class="floating-card">
+
+                <div class="status-dot"></div>
+
+                <div>
+                    <strong>Classrooms Available</strong>
+                    <span id="availableCount">--</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- STATISTICS -->
+
+    <section class="stats">
+
+        <div class="stat-card">
+
+            <div class="stat-icon blue">🏫</div>
+
+            <div>
+                <p>Total Classrooms</p>
+                <h2 id="totalRooms">--</h2>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon green">✓</div>
+
+            <div>
+                <p>Available Now</p>
+                <h2 id="availableRooms">--</h2>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon orange">👥</div>
+
+            <div>
+                <p>Currently Used</p>
+                <h2 id="usedRooms">--</h2>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon purple">🤖</div>
+
+            <div>
+                <p>AI Accuracy</p>
+                <h2>94%</h2>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUICK ACTIONS -->
+
+    <section class="section">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="eyebrow">QUICK ACTIONS</span>
+                <h2>What do you want to do?</h2>
+            </div>
+
+        </div>
+
+
+        <div class="action-grid">
+
+            <a href="rooms.html" class="action-card">
+
+                <div class="action-number">01</div>
+
+                <div class="action-icon">🔎</div>
+
+                <h3>Find Classroom</h3>
+
+                <p>
+                    Search for classrooms that are currently available.
+                </p>
+
+                <span class="arrow">→</span>
+
+            </a>
+
+
+            <a href="rooms.html" class="action-card">
+
+                <div class="action-number">02</div>
+
+                <div class="action-icon">✓</div>
+
+                <h3>Check-In</h3>
+
+                <p>
+                    Check into an available classroom instantly.
+                </p>
+
+                <span class="arrow">→</span>
+
+            </a>
+
+
+            <a href="rooms.html" class="action-card">
+
+                <div class="action-number">03</div>
+
+                <div class="action-icon">↗</div>
+
+                <h3>Check-Out</h3>
+
+                <p>
+                    End your classroom session when you are finished.
+                </p>
+
+                <span class="arrow">→</span>
+
+            </a>
+
+
+            <a href="prediction.html" class="action-card">
+
+                <div class="action-number">04</div>
+
+                <div class="action-icon">🤖</div>
+
+                <h3>AI Prediction</h3>
+
+                <p>
+                    Predict classroom availability at a future time.
+                </p>
+
+                <span class="arrow">→</span>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOW IT WORKS -->
+
+    <section class="how-section">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="eyebrow">HOW IT WORKS</span>
+                <h2>One system. Three simple steps.</h2>
+            </div>
+
+        </div>
+
+
+        <div class="steps">
+
+            <div class="step">
+
+                <div class="step-number">01</div>
+
+                <h3>Find</h3>
+
+                <p>
+                    Check which classrooms are currently available.
+                </p>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+            <div class="step">
+
+                <div class="step-number">02</div>
+
+                <h3>Check-In</h3>
+
+                <p>
+                    Select a classroom and start your session.
+                </p>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+            <div class="step">
+
+                <div class="step-number">03</div>
+
+                <h3>Check-Out</h3>
+
+                <p>
+                    Finish your session and free the classroom.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <div>
+        <strong>SmartClass AI</strong>
+        <span>Smart Classroom Availability & AI Prediction System</span>
+    </div>
+
+    <p>© 2026 SmartClass AI</p>
+
+</footer>
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
