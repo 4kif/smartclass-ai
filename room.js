@@ -1,4 +1,4 @@
-const roomData = [
+const roomData = [ 
 
     {
         id: "A101",
