@@ -1,1 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Classrooms — SmartClass AI</title>
+
+<link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            SC
+        </div>
+
+        <div>
+            <h2>SmartClass<span> AI</span></h2>
+            <small>Smart Classroom System</small>
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">
+            Dashboard
+        </a>
+
+        <a class="active" href="rooms.html">
+            Classrooms
+        </a>
+
+        <a href="prediction.html">
+            AI Prediction
+        </a>
+
+        <a href="history.html">
+            History
+        </a>
+
+    </nav>
+
+
+    <div class="user">
+
+        <div class="avatar">
+            S
+        </div>
+
+        <span>
+            Student
+        </span>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+<section class="page-header">
+
+    <div>
+
+        <span class="eyebrow">
+            CLASSROOM FINDER
+        </span>
+
+        <h1>
+            Find an available classroom
+        </h1>
+
+        <p>
+            Select a classroom to check in or check out.
+        </p>
+
+    </div>
+
+
+    <div class="live-status">
+
+        <span></span>
+
+        Live Status
+
+    </div>
+
+</section>
+
+
+<!-- FILTER -->
+
+<section class="filter-box">
+
+    <input
+        type="text"
+        id="searchRoom"
+        placeholder="Search classroom..."
+    >
+
+
+    <select id="capacityFilter">
+
+        <option value="all">
+            Any Capacity
+        </option>
+
+        <option value="20">
+            20+ seats
+        </option>
+
+        <option value="40">
+            40+ seats
+        </option>
+
+        <option value="60">
+            60+ seats
+        </option>
+
+    </select>
+
+
+    <select id="statusFilter">
+
+        <option value="all">
+            All Status
+        </option>
+
+        <option value="available">
+            Available
+        </option>
+
+        <option value="occupied">
+            Occupied
+        </option>
+
+    </select>
+
+</section>
+
+
+<!-- ROOM LIST -->
+
+<section>
+
+    <div
+        class="room-grid"
+        id="roomGrid"
+    ></div>
+
+</section>
+
+
+</main>
+
+
+<!-- CHECK IN MODAL -->
+
+<div
+    class="modal"
+    id="checkinModal"
+>
+
+    <div class="modal-content">
+
+        <button
+            class="close"
+            onclick="closeModal()"
+        >
+            ×
+        </button>
+
+        <span class="eyebrow">
+            CHECK-IN
+        </span>
+
+        <h2>
+            Check into classroom
+        </h2>
+
+        <p id="selectedRoomText"></p>
+
+
+        <label>
+            Student Name
+        </label>
+
+        <input
+            id="studentName"
+            type="text"
+            placeholder="Enter your name"
+        >
+
+
+        <label>
+            Purpose
+        </label>
+
+        <select id="purpose">
+
+            <option>
+                Self Study
+            </option>
+
+            <option>
+                Group Discussion
+            </option>
+
+            <option>
+                Assignment
+            </option>
+
+            <option>
+                Project
+            </option>
+
+        </select>
+
+
+        <button
+            class="btn primary full"
+            onclick="confirmCheckIn()"
+        >
+            Confirm Check-In
+        </button>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <div>
+        <strong>SmartClass AI</strong>
+        <span>
+            Smart Classroom Availability & AI Prediction System
+        </span>
+    </div>
+
+    <p>
+        © 2026 SmartClass AI
+    </p>
+
+</footer>
+
+
+<script src="js/rooms.js"></script>
+
+</body>
+</html>
