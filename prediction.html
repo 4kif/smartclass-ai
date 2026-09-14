@@ -1,1 +1,297 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>AI Prediction — SmartClass AI</title>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            SC
+        </div>
+
+        <div>
+
+            <h2>
+                SmartClass<span> AI</span>
+            </h2>
+
+            <small>
+                Smart Classroom System
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">
+            Dashboard
+        </a>
+
+        <a href="rooms.html">
+            Classrooms
+        </a>
+
+        <a class="active" href="prediction.html">
+            AI Prediction
+        </a>
+
+        <a href="history.html">
+            History
+        </a>
+
+    </nav>
+
+
+    <div class="user">
+
+        <div class="avatar">
+            S
+        </div>
+
+        <span>
+            Student
+        </span>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+
+<section class="page-header">
+
+    <div>
+
+        <span class="eyebrow">
+            ARTIFICIAL INTELLIGENCE
+        </span>
+
+        <h1>
+            Classroom Availability Prediction
+        </h1>
+
+        <p>
+            Predict how likely a classroom will be available
+            at a future date and time.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="prediction-layout">
+
+
+<div class="prediction-form">
+
+    <h2>
+        Make a prediction
+    </h2>
+
+    <p>
+        Enter your preferred classroom and time.
+    </p>
+
+
+    <label>
+        Classroom
+    </label>
+
+    <select id="predictionRoom">
+
+        <option value="A101">
+            A101
+        </option>
+
+        <option value="A102">
+            A102
+        </option>
+
+        <option value="A103">
+            A103
+        </option>
+
+        <option value="B201">
+            B201
+        </option>
+
+        <option value="B202">
+            B202
+        </option>
+
+        <option value="B203">
+            B203
+        </option>
+
+        <option value="C301">
+            C301
+        </option>
+
+        <option value="C302">
+            C302
+        </option>
+
+    </select>
+
+
+    <label>
+        Date
+    </label>
+
+    <input
+        type="date"
+        id="predictionDate"
+    >
+
+
+    <label>
+        Time
+    </label>
+
+    <input
+        type="time"
+        id="predictionTime"
+        value="14:00"
+    >
+
+
+    <button
+        class="btn primary full"
+        onclick="predictAvailability()"
+    >
+        🤖 Predict Availability
+    </button>
+
+</div>
+
+
+<div
+    class="prediction-result"
+    id="predictionResult"
+>
+
+    <div class="ai-circle">
+        AI
+    </div>
+
+    <h2>
+        Waiting for prediction
+    </h2>
+
+    <p>
+        Choose a classroom, date and time to see the prediction.
+    </p>
+
+</div>
+
+
+</section>
+
+
+<section class="ai-info">
+
+    <div>
+
+        <span class="eyebrow">
+            HOW AI WORKS
+        </span>
+
+        <h2>
+            Prediction based on classroom usage
+        </h2>
+
+    </div>
+
+
+    <div class="ai-features">
+
+        <div>
+            <strong>01</strong>
+            <h3>Historical Usage</h3>
+            <p>
+                Previous check-in and check-out records are analysed.
+            </p>
+        </div>
+
+
+        <div>
+            <strong>02</strong>
+            <h3>Time Pattern</h3>
+            <p>
+                The system identifies busy and quiet periods.
+            </p>
+        </div>
+
+
+        <div>
+            <strong>03</strong>
+            <h3>Availability Score</h3>
+            <p>
+                AI calculates the probability of availability.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+    <div>
+
+        <strong>
+            SmartClass AI
+        </strong>
+
+        <span>
+            Smart Classroom Availability & AI Prediction System
+        </span>
+
+    </div>
+
+    <p>
+        © 2026 SmartClass AI
+    </p>
+
+</footer>
+
+
+<script src="js/prediction.js"></script>
+
+</body>
+</html>
