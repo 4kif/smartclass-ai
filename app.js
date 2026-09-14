@@ -11,7 +11,7 @@ const rooms = [
     {
         id: "A102",
         capacity: 40,
-        floor: "Ground Floor",
+        floor: "Ground Floor", 
         status: "occupied"
     },
 
