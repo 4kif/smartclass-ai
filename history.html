@@ -1,1 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>History — SmartClass AI</title>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            SC
+        </div>
+
+        <div>
+
+            <h2>
+                SmartClass<span> AI</span>
+            </h2>
+
+            <small>
+                Smart Classroom System
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">
+            Dashboard
+        </a>
+
+        <a href="rooms.html">
+            Classrooms
+        </a>
+
+        <a href="prediction.html">
+            AI Prediction
+        </a>
+
+        <a class="active" href="history.html">
+            History
+        </a>
+
+    </nav>
+
+
+    <div class="user">
+
+        <div class="avatar">
+            S
+        </div>
+
+        <span>
+            Student
+        </span>
+
+    </div>
+
+</header>
+
+
+<main class="container">
+
+
+<section class="page-header">
+
+    <div>
+
+        <span class="eyebrow">
+            ACTIVITY
+        </span>
+
+        <h1>
+            Check-In History
+        </h1>
+
+        <p>
+            View previous classroom usage records.
+        </p>
+
+    </div>
+
+
+    <button
+        class="btn secondary"
+        onclick="clearHistory()"
+    >
+        Clear History
+    </button>
+
+</section>
+
+
+<section class="history-card">
+
+    <div class="history-header">
+
+        <span>
+            Classroom
+        </span>
+
+        <span>
+            Student
+        </span>
+
+        <span>
+            Purpose
+        </span>
+
+        <span>
+            Check-In
+        </span>
+
+        <span>
+            Check-Out
+        </span>
+
+        <span>
+            Status
+        </span>
+
+    </div>
+
+
+    <div
+        id="historyList"
+        class="history-list"
+    ></div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+    <div>
+
+        <strong>
+            SmartClass AI
+        </strong>
+
+        <span>
+            Smart Classroom Availability & AI Prediction System
+        </span>
+
+    </div>
+
+    <p>
+        © 2026 SmartClass AI
+    </p>
+
+</footer>
+
+
+<script src="js/history.js"></script>
+
+</body>
+</html>
